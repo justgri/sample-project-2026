@@ -5,7 +5,9 @@ from pathlib import Path
 st.title("Hello world - just testing!")
 
 
-password = "12345"
+# password = "12345" # VERY BAD
+
+password = st.secrets["password"]
 
 user_password = st.text_input(label="User password")
 
